@@ -1,3 +1,7 @@
+### Doc & Refs
+- https://go.dev/tour/welcome/1
+- https://www.youtube.com/watch?v=50ewcV8PsI4
+
 ### Check version
 ```
 > go version
