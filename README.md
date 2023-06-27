@@ -1,6 +1,7 @@
 ### Doc & Refs
 - https://go.dev/tour/welcome/1
 - https://www.youtube.com/watch?v=50ewcV8PsI4
+- https://www.youtube.com/watch?v=TkbhQQS3m_o&t=500s
 
 ### Check version
 ```
