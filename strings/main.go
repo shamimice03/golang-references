@@ -11,9 +11,9 @@ func main() {
 	a = append(a, "One", "two", "three", "four")
 
 	b := strings.Join(a, "-")
-	c := strings.Jo
 
 	fmt.Println(b)
+	// output: One-two-three-four
 
 }
 
