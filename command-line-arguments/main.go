@@ -1,4 +1,3 @@
-```go
 package main
 
 import (
@@ -20,4 +19,13 @@ func main() {
 
 }
 
-```
+
+//Input-->  go run main.go test1 test2
+
+//Outputs:
+
+// /tmp/go-build3363658004/b001/exe/main
+// test1
+// test2
+// 0   test1
+// 1   test2
