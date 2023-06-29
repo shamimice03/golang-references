@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"io"
+	"log"
 	"net/http"
 	"net/url"
 	"os"
@@ -22,6 +24,20 @@ func main() {
 		os.Exit(1) // Invalid
 	}
 
-	http.Get("https://www.amazon.com/")
+	response, err := http.Get("https://www.amazon.com/")
+
+	if err != nil {
+		log.Fatal((err))
+	}
+
+	defer response.Body.Close()
+
+	body, err := io.ReadAll(response.Body)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Printf("HTTP Status Code %d\nBody: %s\n", response.StatusCode, body)
 
 }
