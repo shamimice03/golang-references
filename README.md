@@ -1,6 +1,6 @@
 ### To-do
 - https://www.youtube.com/watch?v=_ok29xwZ11k&list=PLHq1uqvAteVufR04uKxK-oDRZqFenJLii&index=3
-- 
+
 ### Doc & Refs
 - https://go.dev/tour/welcome/1
 - https://www.youtube.com/watch?v=50ewcV8PsI4
