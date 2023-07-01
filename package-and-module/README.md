@@ -65,3 +65,12 @@ func main() {
 	breaking.BreakingNews() // function calling from different package (breaking)
 }
 ```
+
+### Run Project
+```go
+> go run .
+
+// Output:
+// Today is a great day
+// Breaking News
+```
