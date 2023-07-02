@@ -1,10 +1,11 @@
 package main
 
 import (
-	"encoding/json"
-	"io/ioutil"
+	"encoding/json" // Package for JSON encoding and decoding
+	"io/ioutil"     // Package for file I/O operations
 )
 
+// Struct representing the attributes of a video
 type video struct {
 	Id          string `json:"id"`
 	Title       string `json:"title"`
@@ -13,29 +14,24 @@ type video struct {
 	Url         string `json:"url"`
 }
 
+// Function to get videos from a JSON file
 func getVideos() (videos []video) {
 
-	filebyets, err := ioutil.ReadFile("./videos.json")
+	filebyets, err := ioutil.ReadFile("./videos.json") // Read file content as byte slice
 
 	if err != nil {
-		panic(err)
+		panic(err) // Panic if there's an error reading the file
 	}
 
-	err = json.Unmarshal(filebyets, &videos)
+	err = json.Unmarshal(filebyets, &videos) // Unmarshal JSON data into videos slice
 
 	if err != nil {
-		panic(err)
+		panic(err) // Panic if there's an error unmarshaling the JSON data
 	}
 
-	return videos
+	return videos // Return the populated videos slice
 
-	// convert the byte to string
-	// fileContent := string(filebyets)
-	// fmt.Printf(fileContent)
-	// return nil
-
-	// manually insert data to the struct (video)
-
+	// The following code demonstrates manually inserting data into the videos slice
 	// v1 := video{
 	// 	Id:          "23223",
 	// 	Title:       "Hello Image",
@@ -53,16 +49,16 @@ func getVideos() (videos []video) {
 	// videos = append(videos, v1)
 	// videos = append(videos, v2)
 	// return videos
-
-	/// return []video{v1, v2}  # can be written like this
+	// The above code can be written as: return []video{v1, v2}
 }
 
+// Function to save videos to a JSON file
 func saveVideos(videos []video) {
-	videoBytes, err := json.Marshal(videos)
+	videoBytes, err := json.Marshal(videos) // Marshal videos slice into JSON format
 
 	if err != nil {
-		panic(err)
+		panic(err) // Panic if there's an error marshaling the JSON data
 	}
 
-	ioutil.WriteFile("./videos-updated.json", videoBytes, 0644)
+	ioutil.WriteFile("./videos-updated.json", videoBytes, 0644) // Write JSON data to file
 }
