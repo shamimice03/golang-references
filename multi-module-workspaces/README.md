@@ -2,12 +2,23 @@
 - Using `go.work` file we can work with multiple module in go (from v1.18)
 
 #### Project Structure
+```
+.
+├── README.md
+├── go.work
+├── moduleA
+│   ├── go.mod
+│   └── main.go
+└── moduleB
+    ├── go.mod
+    └── lib.go
+```
 Create Two folders named as `moduleA`  and `moduleB`
 - Initialized them using `god mod init NAME`
    - moduleA - `go mod init multimodule`
    - moduleB - `go mod init lib`
 
-###### `main.go`
+#### `main.go`
 ```go
 package main
 
