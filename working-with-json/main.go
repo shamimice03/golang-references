@@ -7,8 +7,3 @@ func main() {
 	videos := getVideos()
 	fmt.Println(videos)
 }
-
-//
-//
-//
-//
