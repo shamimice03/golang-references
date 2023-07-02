@@ -1,3 +1,6 @@
+### Golang HTTP
+![Alt text](image.png)
+
 ### v1 (`main.go`)
 ```go
 package main
@@ -103,6 +106,7 @@ Both functions are registered as handlers for specific paths using `http.HandleF
 ![Alt text](<Screenshot 2023-07-03 at 2.02.14.png>)
 
 ### Ref:
+- https://dev.to/bmf_san/introduction-to-golang-http-router-made-with-nethttp-3nmb
 - https://www.youtube.com/watch?v=MKkokYpGyTU&t=138s&ab_channel=ThatDevOpsGuy
 - https://github.com/marcel-dempers/docker-development-youtube-series/tree/master/golang/introduction/part-3.http
 
