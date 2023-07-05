@@ -1,6 +1,5 @@
 ### Pointer
 #### Without - Pointer
-
 ```go
 func zero(x int) {
 	x = 0
@@ -17,7 +16,6 @@ x = 5
 Sending the copy of x to the zero func
 Original value remains same inside the main func
 ```
-
 #### With - Pointer
 ```go
 package main
@@ -69,8 +67,44 @@ zero(p *int) // p = currently holding address of x
 *p // dereferencing, currently holding value of x
 *p = 0 // change the value of x to zero
 ```
+#### Another Example:
+```go
+package main
+import "fmt"
+/* For exercises uncomment the imports below */
+// import "strconv"
+// import "encoding/json"
 
+func main() {
+
+    // a normal variable  whose address the pointer will store 
+    var intData = 20 
+    
+    //declaration of a pointer 
+    var intPointer *int
+
+    //intPointer now points towards intData    
+    intPointer = &intData 
+
+    fmt.Println("what intData stores:", intData)
+    fmt.Println("address of intData:", &intData)
+    fmt.Println("what intPointer stores:", intPointer)
+
+
+    //this updates the value of intData using dereferncing operator 
+    *intPointer = 30
+
+    fmt.Println("what intData now stores:", intData)
+}
+
+// Output:
+// what intData stores: 20
+// address of intData: 0xc00010c000
+// what intPointer stores: 0xc00010c000
+// what intData now stores: 30
+```
 
 ### Ref:
-- https://www.youtube.com/watch?v=sTFJtxJXkaY&t=10s
+- https://www.youtube.com/watch?v=sTFJtxJXkaY
 - https://www.golang-book.com/books/intro/8
+- https://www.educative.io/answers/what-are-pointers-in-golang
