@@ -108,3 +108,27 @@ func main() {
 - https://www.youtube.com/watch?v=sTFJtxJXkaY
 - https://www.golang-book.com/books/intro/8
 - https://www.educative.io/answers/what-are-pointers-in-golang
+
+***
+
+### Struct - Pointer
+```go
+package main
+
+import "fmt"
+
+type Vertex struct {
+	X int
+	Y int
+}
+
+func main() {
+	v := Vertex{1, 2}
+	p := &v
+	p.X = 1e9
+	fmt.Println(v)
+}
+
+// Output:
+//{1000000000 2}
+```
