@@ -60,9 +60,47 @@ func main() {
 	// fmt.Println("Concate two string", s.add())
 	// fmt.Println("Length after concate two string", s.length())
 
+	// Way to use interface
+
 	p := Adder(&n)
 	k := Adder(&s)
 
 	fmt.Printf("Type of p: %T\n", p)
 	fmt.Printf("Type of k: %T\n", k)
+
+	// Another way to user Interface
+	fmt.Println("Another way to use interface:")
+	// Interface type variable, assigned value a struct type
+	var a Addition
+	fmt.Printf("Type of a: %T\n", a)
+
+	a = &n
+	fmt.Printf("Type of a: %T\n", a)
+	fmt.Println(a.add())
+	// Dynamically assigned another struct type
+	a = &s
+	fmt.Printf("Type of a: %T\n", a)
+	fmt.Println(a.add())
+
+	// Type Assertion
+	// If we want to access length() method through the interface
+
+	// a.length()  -> error
+
+	// type assertion:  interface_var.(Type).method
+	// Interface var: a
+	// Type: *StringContent
+	// Method: Length
+
+	fmt.Println(a.(*StringContent).length())
+
+	// Type Assertion Check
+	// New Interface type var with Number Struct assigned
+	var demo Addition = &n
+
+	dummy, ok := demo.(*Number)
+	fmt.Printf("Check %v\nok: %v\n", dummy, ok)
+
+	fmt.Println("Subtract:", dummy.subtract())
+
 }
