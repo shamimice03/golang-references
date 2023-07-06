@@ -1,0 +1,7 @@
+go 1.20
+
+use (
+	./golang-for-devops-cloud
+	./httpserver
+	.\package-and-module\
+)

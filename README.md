@@ -1,5 +1,12 @@
+### About the repository
+- Every directory is a separate module
+- When creating a directory use <go mod init> to initialized the module.
+```
+go mod init github.com/shamimice03/golang-references/<DIRECTORY>
+go mod tidy
+```
+
 ### To-do
-- https://www.youtube.com/watch?v=_ok29xwZ11k&list=PLHq1uqvAteVufR04uKxK-oDRZqFenJLii&index=3
 
 
 ### Doc & Refs
@@ -8,6 +15,8 @@
 - https://www.youtube.com/watch?v=TkbhQQS3m_o&t=500s
 - Pointers
   - https://www.youtube.com/watch?v=sTFJtxJXkaY&t=8s&ab_channel=JunminLee
+- Working With Json
+  -  https://www.youtube.com/watch?v=_ok29xwZ11k&list=PLHq1uqvAteVufR04uKxK-oDRZqFenJLii&index=3
 
 ### Check version
 ```
@@ -44,5 +53,7 @@ The <name> parameter typically follows a domain name format, such as github.com/
 For example, if you have a project called "myproject" hosted on GitHub under your username "johnsmith," you would run the command go mod init github.com/johnsmith/myproject to initialize the Go module.
 
 `go mod tidy`: This command is used to update the dependencies listed in the go.mod file. It ensures that the go.mod file accurately reflects the actual dependencies used in your code. The go mod tidy command will add any missing dependencies to the go.mod file and remove any unnecessary dependencies that are not used in your code.
+
+
 
 
