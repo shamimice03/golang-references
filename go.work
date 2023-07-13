@@ -4,5 +4,6 @@ use (
 	./golang-for-devops-cloud/http-json-response
 	./httpserver
 	./interface
+	./interface-depth
 	.\package-and-module\
 )

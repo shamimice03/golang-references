@@ -40,7 +40,6 @@ func main() {
 
 	printResponse(response)
 	accessResponse(response)
-
 }
 
 // makeRequest performs an HTTP GET request and returns the response as a *Response or an error if any.
