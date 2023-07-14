@@ -1,9 +1,12 @@
 go 1.20
 
 use (
+	./functions
 	./golang-for-devops-cloud/http-json-response
 	./httpserver
 	./interface
 	./interface-depth
+	./string-byte-rune
+	./strings
 	.\package-and-module\
 )
