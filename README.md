@@ -53,18 +53,13 @@ https://juliensalinas.com/en/golang-API-backend-vuejs-SPA-frontend-docker-modern
 
 - Udemy course for reference golang- https://www.udemy.com/course/building-web-applications-with-go-intermediate-level/
 
-Udemy course for golang & vuejs3 - https://www.udemy.com/course/working-with-vue-3-and-go/
+- Udemy course for golang & vuejs3 - https://www.udemy.com/course/working-with-vue-3-and-go/
 
-blogs on golang + vueJS/vuetify - https://adeshg7.medium.com/vuejs-golang-a-rare-combination-53538b6fb918
+- blogs on golang + vueJS/vuetify - https://adeshg7.medium.com/vuejs-golang-a-rare-combination-53538b6fb918
 
-dynamic query https://betterprogramming.pub/dynamic-sql-query-with-go-8aeedaa02907
+- dynamic query https://betterprogramming.pub/dynamic-sql-query-with-go-8aeedaa02907
 
-others https://stackoverflow.com/questions/66563805/how-to-insert-a-null-foreign-key-in-gorm
-
-
-
-golang resources begineers er jnno.
-amr starting e jegula follow korsilm
+- others https://stackoverflow.com/questions/66563805/how-to-insert-a-null-foreign-key-in-gorm
 
 
 
