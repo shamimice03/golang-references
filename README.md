@@ -1,9 +1,6 @@
 ### Resources:
 
--------- Golang --------
---------------------------
-
-golang tutorial (advanced) => https://www.youtube.com/playlist?list=PLujhHB_uAFJws6Vv5q1KDoaQ4YcpS9UOm
+- golang tutorial (advanced) => https://www.youtube.com/playlist?list=PLujhHB_uAFJws6Vv5q1KDoaQ4YcpS9UOm
 
 - composition in golang (inheritance alternative) => https://www.youtube.com/watch?v=I0Ei70cZtf8&t=122s
 
